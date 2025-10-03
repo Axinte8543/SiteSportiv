@@ -40,4 +40,4 @@ It contains dedicated pages for multiple sports (football, basketball, handball,
 Project created by **Axinte**.
 
 ## Demo
-[Watch the demo](demo/demo.mp4)
+[Watch the demo] https://www.youtube.com/watch?v=70j_PkPlj_I
