@@ -1,0 +1,122 @@
+.Messipoza1
+{width: 918px;
+ height:516px;    
+}
+h1
+{font-size:35px;
+ font-family:Ariel;
+ font-weight:bold;
+     
+} 
+.Titlu /*selector de clasa*/
+{   
+ margin-top:200px;  
+}
+body
+{background-color: grey;
+ margin: 0;
+ padding-top: 80px;
+ margin-left:100px;}
+p
+{
+ font-size:20px;
+ font-family:Ariel;
+ width: 916px;   
+ font-weight:bold;
+}
+h2 /*selector de elemente*/
+{
+ font-size:30px;
+ font-family:Ariel;
+ width: 916px;    
+ font-weight:bold;
+    
+}
+main
+{display:flex;
+ flex-direction:column;    
+}
+
+.container .wrapper{
+      width:600px;
+      height:300px;
+      box-shadow:10px 10px 20px rgba(0,0,0,0.6);
+      margin: 50px auto; /*va avea o distanta automata de 50 px de distanta fata de sus si o distanta de 50 px fata de distanta de jos*/
+      overflow: hidden; /*folosim asta doar ca sa ne arate prima poza*/
+}
+/*selector descendent*/
+.container .wrapper-holder{
+    display:grid;
+    grid-template-columns: repeat(4,100%); /* creează un grid cu patru coloane egale, fiecare ocupând întreaga lățime a containerului gridului.*/
+    height:100%;
+    width:100%;
+    animation-name: slider;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;}
+.container #poza1{
+    background-image:url(./poze/bronny.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+.container #poza2{ 
+    background-image:url(./poze/messi.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+/*selector de id*/
+.container #poza3{
+    background-image:url(./poze/handbal1.jpg);
+    background-position: center;
+    background-size:cover;
+    
+}
+.container #poza4{
+    background-image:url(./poze/halep.jpg);
+    background-position: center;
+    background-size:cover;
+}
+@keyframes slider
+{
+ 0%{transform: translateX(0%);}
+ 10%{transform: translateX(-100%);}
+ 20%{transform: translateX(-100%);}
+ 30%{transform: translateX(-200%);}
+ 40%{transform: translateX(-200%);}
+ 50%{transform: translateX(-200%);}
+ 60%{transform: translateX(-300%);}
+ 70%{transform: translateX(-300%);}
+ 80%{transform: translateX(-300%);}
+ 90%{transform: translateX(0%);} 
+ 100%{transform: translateX(0%);}    
+}
+.overlay-text {
+    position: absolute; /* pozitionare absoluta in raport cu containerul*/
+    background-color: rgba(255, 255, 255, 0.7); /* fundal transparent */
+    bottom:0;
+    padding: 10px; /* spatiere pentru text */
+    color: black; 
+    font-size:20px;
+    width: 100%; 
+    font-family:Ariel;
+    font-weight:bold;
+    z-index:1;
+}
+.ceva {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+}
+#comment {
+    width: 500px;
+    height:200px;
+  }
+@media (max-width: 980px) 
+{h2
+{font-size:40px;}
+    
+}
