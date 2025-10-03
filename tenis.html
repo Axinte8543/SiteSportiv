@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ro"> 
+<head> 
+<meta charset="UTF-8">     
+<title>Sportmav</title>
+<link rel="stylesheet" href="./styles/header.css"> 
+<link rel="stylesheet" href="./styles/fotbal1.css">  
+</head>
+<body>      
+<header>
+    <div class="left-section"> 
+        <a href="https://www.facebook.com/sport.mav"><img class="facebook" src="./styles/poze/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img class="instagram" src="./styles/poze/instagrambun.jpg" alt="Instagram"></a> 
+    </div>        
+    <div class="center-section"> 
+        <a href="index6.html"><img class="sportmav" src="./styles/poze/sportmav.jpg" alt="Sportmav"></a>
+    </div>    
+    <ul id="right-section">  
+    <li><a href="#">Fotbal▼</a>
+        <ul class="dropdown">
+      <li><a href="fotbal.html">Fotbal Intern</a></li>
+      <li><a href="fotbal.html">Fotbal Extern</a></li>
+        </ul>
+    </li>    
+    <li><a href="tenis.html">Tenis</a></li>
+    <li><a href="baschet.html">Baschet</a></li>
+    <li><a href="handbal.html">Handbal</a></li>
+   </ul>                
+</header>
+    <main>
+    <div class="Titlu">
+    <h1>La ce turneu participa Simona Halep dupa ce a primit un wild-card din partea organizatorilor</h1>
+    <img class="Messipoza1" src="./styles/poze/halep.jpg" alt="Messi">
+    </div>    
+    <div class="Continut">
+        <div class="Continut">
+            <p>Simona Halep, care a revenit recent după ce TAS i-a redus suspendarea de la patru ani la nouă luni, a primit wild card pentru încă un turneu, informează Marca.</p>
+            <p>Halep va participa la turneul de categorie WTA 125 de la Oeiras, din Portugalia, în perioada 15-21 aprilie.</p>
+            <h2>Halep va juca la încă un turneu înainte de Madrid Open</h2>    
+            <p>După Oeiras, fostul lider WTA va merge la Madrid, unde va concura la Mutua Madrid Open, în perioada 23 aprilie – 5 mai, tot ca beneficiară de wild card.</p>
+            <p>Românca, aflată pe locul 1.144 WTA, se pregăteşte în prezent la Bucureşti alături de antrenorul său spaniol Carlos Martinez.</p>
+            </div>
+        </div>
+    <form id="myForm" action="/comentarii" method="post">
+        <label for="name">Nume:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="comment">Comentariu:</label><br>
+        <textarea id="comment" name="comment" required></textarea><br>
+        <input type="submit" value="Trimite">
+      </form>
+      <div id="comments"></div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="poza1">
+                    <span class="overlay-text">Veste mare pentru Lebron.Fiul lui cel mare se va inscrie in draftul pentru NBA din 2024</span><a class="ceva" href="baschet.html"></a>
+                </div>
+                <div id="poza2">
+                    <span class="overlay-text">Lionel Messi a semnat cu Dinamo Bucuresti: primul transfer al iernii pentru Cainii Rosii.</span><a class="ceva" href="fotbal.html"></a>
+                </div>
+                <div id="poza3">
+                    <span class="overlay-text">Care este lotul final al Romaniei la Campionatul European de handbal masculin</span><a class="ceva" href="handbal.html"></a>
+                </div>
+                <div id="poza4">
+                    <span class="overlay-text">La ce turneu participa Simona Halep dupa ce a primit un wild-card din partea organizatorilor</span><a class="ceva" href="tenis.html"></a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    </main>
+    <script src="./script.js"></script>   
+</body>    
+        
